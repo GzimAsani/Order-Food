@@ -10,6 +10,8 @@ const HeaderCartButton = (props) => {
     return curNumber + item.amount
   }, 0)
 
+  const buttonClasses = `${classes.button} ${classes.bump}`
+
   return (
     <button className={classes.button} onClick={props.onClick}>
       <span className={classes.icon}>
